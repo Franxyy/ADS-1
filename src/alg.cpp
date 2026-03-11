@@ -5,12 +5,12 @@
 
 bool checkPrime(uint64_t value) {
   if (value < 2) {
-   return false;
+    return false;
   }
   for (uint64_t z = 2; z < value; z++) {
-   if (value % z == 0) {
-  	 return false;
-   }
+    if (value % z == 0) {
+  	  return false;
+    }
   }
   return true;
 }
@@ -46,11 +46,11 @@ uint64_t nextPrime(uint64_t value) {
         return 2;
     } else {
         uint64_t num = value + 1;
-        if (num % 2 == 0 && num > 2) {
+        if (num % 2 == 0) {
             num++;
         }
         while (true) {
-            bool logic = false;
+            bool logic = true;
             if (num < 2) {
                 logic = false;
             } else if (num == 2) {
