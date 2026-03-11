@@ -9,7 +9,7 @@ bool checkPrime(uint64_t value) {
   }
   for (uint64_t z = 2; z < value; z++) {
     if (value % z == 0) {
-  	  return false;
+      return false;
     }
   }
   return true;
